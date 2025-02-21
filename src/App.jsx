@@ -41,7 +41,7 @@ function App() {
           <div className="curvy-img-mob flex flex-col items-center justify-center">
             <div className="img-div pb-9">
               <img
-                src="../images/illustration-intro.png"
+                src="https://i.ibb.co/G431g6W9/illustration-intro.png"
                 alt="An image (it doesn't have a powerful meaning in the page)"
                 className="sm:max-w-[500px] md:max-w-[500px] z-10"
               />
@@ -253,7 +253,7 @@ function App() {
           <div className="stay-prod-div block md:flex sm:items-center sm:justify-center sm:gap-15 px-6">
             <div className="stay-prod-img-div flex justify-center pt-16 min-w[300px]">
               <img
-                src="../images/illustration-stay-productive.png"
+                src="https://i.ibb.co/yc2BFbCQ/illustration-stay-productive.png"
                 alt=""
                 className="min-w[300px]"
               />
@@ -348,7 +348,7 @@ function App() {
             <div className="test-lower">
               <div className="test-img">
                 <img
-                  src="../images/profile-1.jpg"
+                  src="https://i.ibb.co/3mH19K95/profile-1.jpg"
                   alt=" testimonial writer-1"
                   className="rounded-full"
                 />
@@ -370,7 +370,7 @@ function App() {
             <div className="test-lower">
               <div className="test-img">
                 <img
-                  src="../images/profile-2.jpg"
+                  src="https://i.ibb.co/RGWSfLDF/profile-2.jpg"
                   alt=""
                   className="rounded-full"
                 />
@@ -392,7 +392,7 @@ function App() {
             <div className="test-lower">
               <div className="test-img">
                 <img
-                  src="../images/profile-3.jpg"
+                  src="https://i.ibb.co/gbjr7cNq/profile-3.jpg"
                   alt=""
                   className="rounded-full"
                 />

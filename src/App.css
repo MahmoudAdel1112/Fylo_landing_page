@@ -175,7 +175,7 @@ p {
 }
 .test1::after {
   content: "";
-  background-image: url(../images/bg-quotes.png);
+  background-image: url(https://i.ibb.co/TBDH0H8v/bg-quotes.png);
   position: absolute;
   width: 55px;
   height: 45px;
