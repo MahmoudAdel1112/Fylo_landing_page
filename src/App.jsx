@@ -419,14 +419,14 @@ function App() {
               </div>
               <form
                 action=""
-                className="flex flex-col  sm:flex-row sm:justify-center px-5"
+                className="flex flex-col md:gap-3 sm:flex-row sm:justify-center px-5"
               >
                 <input
                   type="text"
-                  className="bg-white rounded-3xl px-4 sm:pr-25 py-3 mt-6 sm:mt-4"
+                  className="bg-white rounded-3xl px-4 sm:pr-25 py-3 mt-6 sm:mt-6 sm:w-[65%]"
                   placeholder="example@email.com"
                 />
-                <button className="bg-[#0bbcbf] rounded-4xl py-3 mt-6 xs:w-full mx-auto sm:px-10 sm:mx-0 hover:opacity-90 active:bg-[#5ec0c2]">
+                <button className="bg-[#0bbcbf] rounded-4xl mt-6 xs:w-full sm:w-[35%] sm:mx-0 hover:opacity-90 active:bg-[#5ec0c2]">
                   Get Started
                 </button>
               </form>
