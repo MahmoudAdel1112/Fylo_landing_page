@@ -43,11 +43,11 @@ function App() {
               <img
                 src="https://i.ibb.co/G431g6W9/illustration-intro.png"
                 alt="An image (it doesn't have a powerful meaning in the page)"
-                className="sm:max-w-[500px] md:max-w-[500px] z-10"
+                className="sm:max-w-[500px] md:max-w-[650px] z-10"
               />
             </div>
-            <div className="text-div flex flex-col justify-center items-center xs:px-3 max-w-[550px]">
-              <h2 className="text-[#C0DDFF] text-xl md:text-3xl text-center font-semibold mb-5 h2-l-h  max-w-[500px] ">
+            <div className="text-div flex flex-col justify-center items-center xs:px-3 max-w-[650px]">
+              <h2 className="text-[#C0DDFF] text-xl md:text-4xl text-center font-semibold mb-5 h2-l-h  max-w-[650px] ">
                 All your files in one secure location, accessible anywhere.
               </h2>
               <p className="text-center text-sm  md:max-w-[85%] md:text-lg text-[#e5f1ff] p-l-h tracking-wide">
@@ -56,7 +56,7 @@ function App() {
                 with friends family, and co-workers.
               </p>
             </div>
-            <div className="z-10 btn-div">
+            <div className="z-10 btn-div pb-20">
               <button className="bg-[#0bbcbf] rounded-4xl py-3 text-white text-lg font-medium px-[4.5rem] mt-6 cursor-pointer active:bg-[#5ec0c2] hover:opacity-90">
                 Get Started
               </button>
