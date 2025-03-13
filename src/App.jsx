@@ -3,15 +3,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 import "./App.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const [isHovered, setIsHovered] = useState(false);
   return (
     <>
-      <div className="intro bg-[#1c2431]">
-        <header className="bg-[url()]">
+      <div className="intro bg-[#1c2431] overflow-x-hidden">
+        <header className="">
           <nav className="flex mx-4 pt-7 md:mx-14 lg:mx-24 pb-10 justify-between">
             <svg
               viewBox="0 0 176 52"
@@ -44,10 +50,12 @@ function App() {
                 src="https://i.ibb.co/G431g6W9/illustration-intro.png"
                 alt="An image (it doesn't have a powerful meaning in the page)"
                 className="sm:max-w-[500px] md:max-w-[650px] z-10"
+                data-aos="zoom-in"
+                data-aos-duration="800"
               />
             </div>
             <div className="text-div flex flex-col justify-center items-center xs:px-3 max-w-[650px]">
-              <h2 className="text-[#C0DDFF] text-xl md:text-4xl text-center font-semibold mb-5 h2-l-h  max-w-[650px] ">
+              <h2 className="text-[#fff] text-xl md:text-4xl text-center font-semibold mb-5 h2-l-h  max-w-[650px] ">
                 All your files in one secure location, accessible anywhere.
               </h2>
               <p className="text-center text-sm  md:max-w-[85%] md:text-lg text-[#e5f1ff] p-l-h tracking-wide">
@@ -64,7 +72,11 @@ function App() {
           </div>
         </main>
         <section className="bg-[#181f2a] w-full flex justify-center">
-          <div className="comp-div flex xs:flex-col items-center justify-center sm:gap-x-20">
+          <div
+            className="comp-div flex xs:flex-col items-center justify-center sm:gap-x-20"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <div className="comp-1 comp">
               <div className="comp-img">
                 <svg width="83" height="78" xmlns="http://www.w3.org/2000/svg">
@@ -256,9 +268,13 @@ function App() {
                 src="https://i.ibb.co/yc2BFbCQ/illustration-stay-productive.png"
                 alt=""
                 className="min-w[300px]"
+                data-aos="fade-right"
               />
             </div>
-            <div className="stay-prod-text-div max-w-[500px] pb-10 mt-20">
+            <div
+              className="stay-prod-text-div max-w-[500px] pb-10 mt-20"
+              data-aos="fade-left"
+            >
               <div className="stay-prod-text-header mb-4">
                 <h2 className="text-[#f1f3f5] text-[1.1rem] mt-7 font-bold sm:text-4xl sm:max-w-[80%] sm:tracking-[0px] sm:leading-[40px]">
                   Stay productive, wherever you are
@@ -337,7 +353,7 @@ function App() {
           </div>
         </section>
         <section className="test-div bg-[#181f2a] pt-20 px-4 md:pt-40  flex justify-center gap-10 flex-wrap pb-30">
-          <div className="test1 test relative">
+          <div className="test1 test relative" data-aos="fade-up">
             <div className="test-header">
               <p>
                 Fylo has improved our team productivity by an order of
@@ -359,7 +375,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="test2 test">
+          <div className="test2 test" data-aos="fade-up">
             <div className="test-header">
               <p>
                 Fylo has improved our team productivity by an order of
@@ -381,7 +397,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="test3 test">
+          <div className="test3 test" data-aos="fade-up">
             <div className="test-header">
               <p>
                 Fylo has improved our team productivity by an order of
@@ -405,13 +421,13 @@ function App() {
           </div>
         </section>
         <div className="fff w-full ">
-          <section className="pb-5 mx-5 md:mx-auto md:max-w-[750px] rounded-lg bg-[#1c2431]  shadow-[#0f0b0b] shadow-2xl ">
+          <section className="pb-5 p-10 mx-5 md:mx-auto md:max-w-[750px] rounded-lg bg-[#1c2431]  shadow-[#0f0b0b] shadow-2xl ">
             <div className="call-to-acc-div h-auto ">
-              <div className="call-to-acc-text-div flex flex-col justify-center align-middle px-5">
-                <p className="text-center text-xl mt-5 mb-4">
+              <div className="call-to-acc-text-div flex flex-col justify-center items-center px-5">
+                <p className="text-center text-2xl mb-4 font-bold">
                   Get early access today
                 </p>
-                <p className="text-center text-sm leading-6 tracking-[0.3px] mb-4">
+                <p className="text-center text-sm leading-6 tracking-[0.3px] mb-4 w-[90%]">
                   It only takes a minute to sign up and our free starter tier is
                   extremely generous. If you have any questions, our support
                   team would be happy to help you.
@@ -423,11 +439,11 @@ function App() {
               >
                 <input
                   type="text"
-                  className="bg-white rounded-3xl px-4 sm:pr-25 py-3 mt-6 sm:mt-6 sm:w-[65%]"
+                  className="bg-white rounded-3xl px-4 sm:pr-25 py-3 mt-6 sm:mt-6 sm:w-[70%]"
                   placeholder="example@email.com"
                 />
-                <button className="bg-[#0bbcbf] rounded-4xl mt-6 xs:w-full sm:w-[35%] sm:mx-0 hover:opacity-90 active:bg-[#5ec0c2]">
-                  Get Started
+                <button className="bg-[#0bbcbf] text-sm text-white font-bold rounded-4xl mt-6 xs:w-full sm:w-[30%] sm:mx-0 hover:opacity-90 active:bg-[#5ec0c2]">
+                  Get Started For Free
                 </button>
               </form>
             </div>
